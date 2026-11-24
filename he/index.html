@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>עדי סספורטס – פיתוח תוכנה, Java ו-Full-Stack | Adi Sasportas</title>
+<meta name="description" content="עדי סספורטס (עדי ספורטס, Adi Sasportas) – פיתוח תוכנה עם התמחות ב-Java בצד השרת ובפיתוח Full-Stack. פרויקטים: ביחד ננצח – מערכת לניהול תרומות, ו-Mover – אפליקציה לגרירה והובלה.">
+<meta name="author" content="עדי סספורטס">
+<link rel="canonical" href="https://adisasportas.github.io/he/">
+<link rel="alternate" hreflang="he" href="https://adisasportas.github.io/he/">
+<link rel="alternate" hreflang="en" href="https://adisasportas.github.io/">
+<link rel="alternate" hreflang="x-default" href="https://adisasportas.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:locale" content="he_IL">
+<meta property="og:title" content="עדי סספורטס – פיתוח תוכנה, Java ו-Full-Stack">
+<meta property="og:description" content="תיק העבודות של עדי סספורטס: פרויקטים, כישורים וקישורים.">
+<meta property="og:url" content="https://adisasportas.github.io/he/">
+<meta name="theme-color" content="#0b1628">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1628'/%3E%3Ctext x='32' y='42' font-family='Arial' font-size='28' font-weight='700' fill='%237cc4ff' text-anchor='middle'%3EAS%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "url": "https://adisasportas.github.io/he/",
+  "inLanguage": "he",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "עדי סספורטס",
+    "alternateName": ["Adi Sasportas", "עדי ספורטס"],
+    "url": "https://adisasportas.github.io/",
+    "jobTitle": "מפתח/ת תוכנה – Java Backend ו-Full-Stack",
+    "sameAs": ["https://github.com/adisasportas", "https://www.linkedin.com/in/adi-sasportas-969224427", "https://www.facebook.com/adiiss"]
+  }
+}
+</script>
+<style>
+  :root {
+    --bg: #0b1628;
+    --bg-2: #0f1e36;
+    --card: #13253f;
+    --line: #22395c;
+    --text: #e8eef8;
+    --muted: #9fb2cc;
+    --accent: #7cc4ff;
+    --accent-2: #4da3f0;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  a { color: var(--accent); }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+  header {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(11, 22, 40, 0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  .bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 64px; }
+  .logo { font-weight: 700; letter-spacing: 0.14em; color: var(--text); text-decoration: none; font-size: 15px; }
+  nav { display: flex; gap: 22px; }
+  nav a { color: var(--muted); text-decoration: none; font-size: 15px; }
+  nav a:hover { color: var(--accent); }
+
+  .hero { padding: 96px 0 80px; background: radial-gradient(900px 400px at 15% 0%, #16325a 0%, transparent 70%); }
+  .eyebrow { color: var(--accent); font-size: 13px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; margin: 0 0 18px; }
+  h1 { font-size: clamp(40px, 7vw, 64px); line-height: 1.05; margin: 0; letter-spacing: -0.01em; }
+  .he { display: block; text-align: left;font-size: clamp(24px, 4vw, 32px); color: var(--muted); font-weight: 500; margin-top: 10px; }
+  .tagline { font-size: clamp(18px, 2.6vw, 22px); color: var(--text); margin: 24px 0 34px; }
+  .tagline span { color: var(--accent); }
+  .buttons { display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 12px 22px; border-radius: 10px;
+    font-weight: 600; font-size: 15px; text-decoration: none;
+    border: 1px solid var(--accent-2);
+    transition: background .15s, color .15s, transform .15s;
+  }
+  .btn:hover { transform: translateY(-1px); }
+  .btn svg { width: 18px; height: 18px; fill: currentColor; }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: #08182d; }
+  .btn.primary:hover { background: #a3d6ff; }
+  .btn.ghost { color: var(--accent); background: transparent; }
+  .btn.ghost:hover { background: rgba(124, 196, 255, 0.1); }
+
+  section { padding: 72px 0; border-top: 1px solid var(--line); scroll-margin-top: 64px; }
+  section:nth-of-type(even) { background: var(--bg-2); }
+  h2 { font-size: 28px; margin: 0 0 24px; }
+  h2::before { content: ""; display: block; width: 40px; height: 3px; background: var(--accent); border-radius: 2px; margin-bottom: 14px; }
+  .lead { color: var(--muted); font-size: 18px; max-width: 720px; margin: 0; }
+  .lead + .lead { margin-top: 14px; }
+  .lead-he { margin-top: 22px !important; padding-top: 18px; border-top: 1px solid var(--line); text-align: right; max-width: 720px; }
+
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 28px; margin-bottom: 18px;
+  }
+  .card h3 { margin: 0 0 4px; font-size: 22px; }
+  .card .kind { color: var(--accent); font-size: 14px; font-weight: 600; margin: 0 0 14px; }
+  .card p { color: var(--muted); margin: 0 0 16px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+  .tags li { font-size: 13px; color: var(--accent); background: rgba(124, 196, 255, 0.08); border: 1px solid rgba(124, 196, 255, 0.25); padding: 4px 12px; border-radius: 999px; }
+  .card .link { display: inline-block; margin-top: 16px; font-weight: 600; text-decoration: none; }
+  .card .link:hover { text-decoration: underline; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; margin: 0; padding: 0; list-style: none; }
+  .chips li {
+    background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    padding: 12px 20px; font-weight: 600; font-size: 16px;
+  }
+
+  footer { border-top: 1px solid var(--line); padding: 28px 0; color: var(--muted); font-size: 14px; }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+  footer a { text-decoration: none; }
+
+  @media (max-width: 560px) {
+    .bar { height: 56px; }
+    .logo { font-size: 13px; letter-spacing: 0.1em; }
+    nav { gap: 14px; }
+    nav a { font-size: 14px; }
+    .hero { padding: 64px 0 56px; }
+    section { padding: 56px 0; scroll-margin-top: 56px; }
+    .card { padding: 22px; }
+    .btn { flex: 1 1 auto; justify-content: center; }
+  }
+  body { font-family: "Segoe UI", "Rubik", "Assistant", Arial, sans-serif; }
+  .he-name { font-size: clamp(40px, 7vw, 64px); }
+  .en { display: block; font-size: clamp(22px, 3.6vw, 30px); color: var(--muted); font-weight: 500; margin-top: 10px; direction: ltr; text-align: right; }
+  .lang { color: var(--muted); text-decoration: none; font-size: 14px; border: 1px solid var(--line); padding: 4px 10px; border-radius: 8px; }
+  .lang:hover { color: var(--accent); border-color: var(--accent); }
+  .ltr { direction: ltr; unicode-bidi: isolate; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#top">עדי סספורטס</a>
+    <nav aria-label="ניווט ראשי">
+      <a href="#about">אודות</a>
+      <a href="#projects">פרויקטים</a>
+      <a href="#skills">כישורים</a>
+      <a class="lang" href="/" hreflang="en" lang="en">EN</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <p class="eyebrow">פיתוח תוכנה · תיק עבודות</p>
+      <h1 class="he-name">עדי סספורטס<span class="en" lang="en">Adi Sasportas</span></h1>
+      <p class="tagline">פיתוח <span>Java בצד השרת</span> ופיתוח Full-Stack</p>
+      <div class="buttons">
+        <a class="btn primary" href="https://www.linkedin.com/in/adi-sasportas-969224427" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+          LinkedIn
+        </a>
+        <a class="btn ghost" href="https://github.com/adisasportas" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-1.97c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>קצת עליי</h2>
+      <p class="lead">עדי סספורטס – פיתוח תוכנה עם התמחות ב-Java בצד השרת ובפיתוח מערכות Full-Stack: לוגיקת שרת, מסדי נתונים וממשק משתמש.</p>
+      <p class="lead">הגישה שלי פשוטה: לקחת צורך אמיתי ולהפוך אותו למוצר שעובד – מבנה נתונים נקי, קוד שרת אמין וממשק שאנשים באמת משתמשים בו.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <h2>פרויקטים נבחרים</h2>
+      <article class="card">
+        <h3>ביחד ננצח</h3>
+        <p class="kind">מערכת Full-Stack לניהול תרומות</p>
+        <p>פלטפורמת ווב לניהול תרומות – צד שרת, מסד נתונים וממשק משתמש, שנבנתה כדי לתת לארגון תמונה ברורה ואמינה של התרומות.</p>
+      </article>
+      <article class="card">
+        <h3>Mover</h3>
+        <p class="kind">אפליקציה לגרירה והובלה (אייפון ואנדרואיד)</p>
+        <p>אפליקציה שמחברת בין מי שצריך גרירה או הובלה לבין הנהג הקרוב והמדורג ביותר – מחיר מראש, מעקב חי, דירוגים וחשבוניות, עם חוויה נפרדת ללקוחות, לנהגים ולמנהלים.</p>
+        <ul class="tags"><li class="ltr">React Native</li><li class="ltr">JavaScript</li><li class="ltr">Firebase</li></ul>
+        <a class="link" href="https://mover-b2cf6.web.app" target="_blank" rel="noopener">לאתר ←</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <h2>כישורים טכניים</h2>
+      <ul class="chips">
+        <li class="ltr">Java</li><li class="ltr">React</li><li class="ltr">SQL</li><li class="ltr">JavaScript</li><li class="ltr">Firebase</li><li class="ltr">Git</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 עדי סספורטס</span>
+    <span><a href="https://github.com/adisasportas" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/adi-sasportas-969224427" target="_blank" rel="noopener">LinkedIn</a> · <a href="/" hreflang="en">English</a></span>
+  </div>
+</footer>
+</body>
+</html>
